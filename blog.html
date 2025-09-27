@@ -19,8 +19,9 @@
       <li><a href="#">Talk to us</a></li>
     </ul>
     <div class="nav-right">
-      <button class="search">🔍</button>
-      <button class="menu">Menu</button>
+      <input type="text" id="search-input" placeholder="Escribe tu búsqueda">
+      <button class="search" id="buscar">Search</button>
+      <button id="theme-toggle">🌙</button>
     </div>
   </nav>
 
@@ -35,18 +36,20 @@
           <span class="date">Sep 06, 2022</span>
           <span class="tag">Travel</span>
         </div>
-        <img src="imagenes/blogger.jpg" alt="Travel" />
+        <img src="imagenes/alpes.jpg" alt="Travel" />
         <div class="card-info">
           <span class="tag">Travel</span>
-          <h2>Get to your dream now destinations with Travel Pro</h2>
+          <h2>A beautiful trip to the Alps</h2>
         </div>
       </article>
 
       <!-- Carta chica (ADS) -->
       <article class="carta chica ads">
         <div class="ads-header">
-            <span class="ads-tag">• ADS</span>
-            <button class="ads-plus">+</button>
+            <div class="likes-container">
+              <button class="ads-plus">👍🏼</button>
+              <span id="like-count">0</span>
+            </div>
         </div>
 
         <h4>Become A <br><span>BROADCAST MEMBER</span></h4>
@@ -57,11 +60,22 @@
 
 
       <!-- Carta chica con imagen -->
-      <article class="carta chica con imagen">
-        <img src="imagenes/travel.jpg" alt="Travel" />
-        <a href="#" class="btn">See all picks →</a>
+      <article class="carta chica">
+        <img src="imagenes/travel.jpg" alt="Travel" id="gallery-image" />
+        <div class="card-info">
+            <a href="#" id="see-all-picks">See all picks →</a>
+        </div>
+      </article>
+
+      <article class="carta chica">
+        <img src="imagenes/soundtrap-n30_i7mx62o-unsplash.jpg" alt="Music" />
+        <div class="card-info">
+          <span class="tag">Music</span>
+          <h2>Create your own music with Soundtrap</h2>
+        </div>
       </article>
     </section>
   </main>
+  <script src="index.js"></script>
 </body>
 </html>
